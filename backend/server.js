@@ -23,6 +23,7 @@ db.once('open', () => {
 // Routes
 app.use('/users', require('./routes/user'));
 app.use('/transactions', require('./routes/transaction'));
+app.use('/', require('./routes/home'));
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
